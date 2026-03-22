@@ -1,0 +1,135 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=Fira+Code:wght@400;500;600&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+
+  html {
+    scroll-behavior: smooth;
+  }
+
+  body {
+    @apply bg-primary-bg text-text-primary font-sans;
+    overflow-x: hidden;
+  }
+
+  main {
+    padding-top: 1.5rem;
+  }
+
+  main section {
+    scroll-margin-top: 5.5rem;
+  }
+
+  main section:not(#home) {
+    scroll-margin-top: 1.5rem;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+  }
+
+  /* Custom Scrollbar */
+  ::-webkit-scrollbar {
+    width: 8px;
+  }
+
+  ::-webkit-scrollbar-track {
+    @apply bg-primary-secondary;
+  }
+
+  ::-webkit-scrollbar-thumb {
+    @apply bg-neon-cyan rounded-full;
+    border-radius: 10px;
+  }
+
+  ::-webkit-scrollbar-thumb:hover {
+    @apply bg-neon-purple;
+  }
+}
+
+@layer components {
+  .glass {
+    @apply bg-white/5 backdrop-blur-md border border-white/10;
+  }
+
+  .neon-border {
+    @apply border border-neon-cyan/50;
+    box-shadow: 0 0 10px rgba(0, 245, 255, 0.3);
+  }
+
+  .gradient-text {
+    @apply bg-gradient-to-r from-neon-cyan via-neon-purple to-neon-glow bg-clip-text text-transparent;
+  }
+
+  .section-padding {
+    @apply py-12 px-6 md:px-12 lg:px-24;
+  }
+
+  .container-custom {
+    @apply max-w-7xl mx-auto;
+  }
+}
+
+@media (max-width: 768px) {
+  .glass {
+    backdrop-filter: blur(6px);
+  }
+
+  .shadow-neon-cyan,
+  .shadow-neon-purple {
+    box-shadow: 0 0 6px rgba(0, 245, 255, 0.12) !important;
+  }
+
+  .text-shadow-glow {
+    text-shadow: 0 0 6px rgba(0, 245, 255, 0.2);
+  }
+}
+
+@media (hover: none) and (pointer: coarse) {
+  * {
+    transition-duration: 120ms !important;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
+
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+  }
+}
+
+@layer utilities {
+  .text-shadow-glow {
+    text-shadow: 0 0 12px rgba(0, 245, 255, 0.32);
+  }
+  
+  .animate-gradient {
+    background-size: 200% 200%;
+    animation: gradient 8s ease infinite;
+  }
+}
+
+/* Cursor Glow Effect */
+.cursor-glow {
+  position: fixed;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background: radial-gradient(circle, rgba(0, 245, 255, 0.3) 0%, transparent 70%);
+  pointer-events: none;
+  z-index: 9999;
+  transition: transform 0.1s ease;
+}
