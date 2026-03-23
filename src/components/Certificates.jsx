@@ -16,7 +16,7 @@ const Certificates = () => {
       title: 'MERN Stack Development',
       organization: 'GOBORU Tech',
       date: '2025',
-      image: '/cert1.png',
+      image: '/cert1.webp',
       description: 'Successfully completed MERN Stack Development training focused on building responsive web interfaces, backend APIs, and full-stack project integration using MongoDB, Express.js, React, and Node.js.',
       credentialUrl: 'https://drive.google.com/file/d/1ucjf-3RpG3VJZTqUCcIYUyBC8vlvpKzl/view?usp=drive_link'
     },
@@ -25,7 +25,7 @@ const Certificates = () => {
       title: 'Data Structures & Algorithms',
       organization: 'Neo colab LPU',
       date: '2024',
-      image: '/cert2.png',
+      image: '/cert2.webp',
       description: 'Completed comprehensive training on data structures and algorithms, covering topics such as arrays, linked lists, trees, sorting algorithms, and problem-solving techniques to optimize code performance.',
       credentialUrl: 'https://drive.google.com/file/d/194YRfLVVmhkRPc3Z2e7ZWD1hbe35IthR/view?usp=sharing'
     },
@@ -34,7 +34,7 @@ const Certificates = () => {
       title: 'Objective-Oriented Programming (OOP) in CPP',
       organization: 'Neo colab LPU',
       date: '2024',
-      image: '/cert3.png',
+      image: '/cert3.webp',
       description: 'Completed training on Object-Oriented Programming (OOP) in C++, covering concepts such as classes, objects, inheritance, polymorphism, and encapsulation to build modular and reusable code.',
       credentialUrl: 'https://drive.google.com/file/d/1C4j2rZeX3A4Pi00KAjLjaLgqQEYkfVen/view?usp=sharing'
     },
@@ -43,7 +43,7 @@ const Certificates = () => {
       title: 'Fundamentals of Network Communication',
       organization: 'Coursera',
       date: '2024',
-      image: '/cert4.png',
+      image: '/cert4.webp',
       description: 'Completed a comprehensive course on network communication fundamentals, covering topics such as TCP/IP protocols, network architecture, and data transmission techniques to enhance understanding of how devices communicate over the internet.',
       credentialUrl: 'https://www.coursera.org/account/accomplishments/verify/GUX8V4FCUDP0'
     },
@@ -52,7 +52,7 @@ const Certificates = () => {
       title: 'The Bits and Bytes of Computer Networking',
       organization: 'coursera (google)',
       date: '2024',
-      image: '/cert5.png',
+      image: '/cert5.webp',
       description: 'Finished a detailed course on computer networking, exploring the underlying principles of data communication, network protocols, and the architecture of the internet to gain a deeper understanding of how networks operate.',
       credentialUrl: 'https://www.coursera.org/account/accomplishments/verify/ZSX9Q73TSGER'
     },
@@ -61,7 +61,7 @@ const Certificates = () => {
       title: 'TCP/IP and Advanced Topics',
       organization: 'coursera',
       date: '2024',
-      image: '/cert6.png',
+      image: '/cert6.webp',
       description: 'Completed an advanced course on TCP/IP protocols, delving into topics such as network security, routing, and performance optimization to enhance knowledge of how data is transmitted securely and efficiently across networks.',
       credentialUrl: 'https://www.coursera.org/account/accomplishments/verify/DRRIB5ANI22N'
     }

@@ -60,7 +60,7 @@ const About = () => {
               {/* Image container */}
               <div className="relative glass rounded-2xl p-4 aspect-square flex items-center justify-center overflow-hidden">
                 <img 
-                  src="/IMG_20251202_112802.jpg.jpeg" 
+                  src="/image.webp" 
                   alt="Sathwik Poosala" 
                   loading="lazy"
                   decoding="async"
